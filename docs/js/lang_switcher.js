@@ -60,7 +60,7 @@ const lang_switcher = {
 
     if (lang_on.innerHTML !== "EN") {
       // about page
-      if (window.location.href.includes("about.html")) {
+      if (window.location.href.includes("about")) {
         lang_switcher.header_about.innerHTML =
           '<h2>Qui suis-<span class="primary">je?</span><span class="title-bg"></span></h2><p>Après une carrière de 18 ans en tant que chef de cuisine, j\'ai fait un gros virage vers la programmation. Je suis désormais à la recherche de belles aventures dans la tech.</p>';
         lang_switcher.author_desc.innerHTML =
@@ -72,7 +72,7 @@ const lang_switcher = {
         lang_switcher.nav_projects_next.innerHTML = "Projets &rarr;";
       }
       //   projects page
-      else if (window.location.href.includes("projects.html")) {
+      else if (window.location.href.includes("projects")) {
         lang_switcher.header_projects.innerHTML =
           '<h2>Mes <span class="primary">projets</span><span class="title-bg"></span></h2><p>Revenez souvent... cette page est en perpétuelle évolution.</p>';
         lang_switcher.git.innerHTML =
@@ -80,7 +80,7 @@ const lang_switcher = {
         lang_switcher.nav_about.innerHTML = "&larr; Moi";
       }
       //   cv page
-      else if (window.location.href.includes("cv.html")) {
+      else if (window.location.href.includes("cv")) {
         lang_switcher.header_cv.innerHTML =
           '<h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, réflexion critique et adaptabilité. Apprenti insatiable et geek de longue date en quête éternelle de maîtriser son métier, quel que soit le défi.</p>';
         lang_switcher.edu.innerHTML = "Éducation";
@@ -100,7 +100,7 @@ const lang_switcher = {
         lang_switcher.nav_projects_prev.innerHTML = "&larr; Projets";
       }
       //   contact page
-      else if (window.location.href.includes("contact.html")) {
+      else if (window.location.href.includes("contact")) {
         lang_switcher.header_contact.innerHTML =
           '<h2>Contactez-<span class="primary">moi</span><span class="title-bg"></span></h2><p>N\'hésitez pas à me contacter si vous avez des questions, ou simplement envie de discuter.</p>';
         lang_switcher.linkedin.innerHTML = "cliquez pour voir mon profil";
@@ -114,7 +114,7 @@ const lang_switcher = {
       }
     } else if (lang_on.innerHTML !== "FR") {
       // about page
-      if (window.location.href.includes("about.html")) {
+      if (window.location.href.includes("about")) {
         lang_switcher.header_about.innerHTML =
           '<h2>About <span class="primary">Me</span><span class="title-bg"></span></h2><p>After a fruitful 18-year career as a professional chef, Imade the big switch to programming. Now I\'m on the hunt for quality experience in back-end development wherever I can get it.</p>';
         lang_switcher.author_desc.innerHTML =
@@ -126,7 +126,7 @@ const lang_switcher = {
         lang_switcher.nav_projects_next.innerHTML = "Projects &rarr;";
       }
       //   projects page
-      else if (window.location.href.includes("projects.html")) {
+      else if (window.location.href.includes("projects")) {
         lang_switcher.header_projects.innerHTML =
           '<h2>My <span class="primary">projects</span><span class="title-bg"></span></h2><p>Check back often... this is a constant work in progress.</p>';
         lang_switcher.git.innerHTML =
@@ -134,7 +134,7 @@ const lang_switcher = {
         lang_switcher.nav_about.innerHTML = "&larr; About";
       }
       //   cv page
-      else if (window.location.href.includes("cv.html")) {
+      else if (window.location.href.includes("cv")) {
         lang_switcher.header_cv.innerHTML =
           '<h2 id="title-cv">My <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Determined, rigorous, and passionate professional who began programming in 2023. Vastly experienced in autonomous and collaborative execution of complex tasks requiring an elevated degree of analysis, critical thinking, and adaptability. Insatiable apprentice on an eternal quest to master his craft, no matter the challenge.</p>';
         lang_switcher.edu.innerHTML = "Education";
@@ -154,7 +154,7 @@ const lang_switcher = {
         lang_switcher.nav_projects_prev.innerHTML = "&larr; Projects";
       }
       //   contact page
-      else if (window.location.href.includes("contact.html")) {
+      else if (window.location.href.includes("contact")) {
         lang_switcher.header_contact.innerHTML =
           '<h2>Get in <span class="primary">touch</span><span class="title-bg"></span></h2><p>Send me an message if you have any questions, or just want to chat.</p>';
         lang_switcher.linkedin.innerHTML = "click to see my profile";
