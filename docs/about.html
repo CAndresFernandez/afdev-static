@@ -22,26 +22,23 @@
     />
     <link
       rel="stylesheet"
-      href="../public/theme/plugins/bootstrap/bootstrap.min.css"
+      href="../docs/theme/plugins/bootstrap/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="../public/theme/plugins/animate.css" />
-    <link rel="stylesheet" href="../public/theme/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="../docs/theme/plugins/animate.css" />
+    <link rel="stylesheet" href="../docs/theme/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="../docs/theme/plugins/slick/slick-theme.css" />
     <link
       rel="stylesheet"
-      href="../public/theme/plugins/slick/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../public/theme/plugins/themefisher-fonts/css/themefisher-fonts.min.css"
+      href="../docs/theme/plugins/themefisher-fonts/css/themefisher-fonts.min.css"
     />
 
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="../public/theme/css/style.css" />
+    <link rel="stylesheet" href="../docs/theme/css/style.css" />
 
     <!-- Favicon -->
     <link
       rel="icon"
-      href="../public/theme/images/favicon.ico"
+      href="../docs/theme/images/favicon.ico"
       type="image/x-icon"
     />
 
@@ -54,6 +51,21 @@
 
   <!-- set class="dark" on body tag for DARK-THEME -->
   <body class="dark">
+    <!-- language switcher -->
+    <div class="preview-wrapper" id="preview-wrapper">
+      <div class="switcher-head">
+        <ul class="lang-options list-none">
+          <li class="text-center" title="english">
+            <span id="en">EN</span>
+          </li>
+          <li class="text-center" title="français">
+            <span id="fr">FR</span>
+          </li>
+        </ul>
+        <div class="switcher-trigger bi bi-globe2"></div>
+      </div>
+    </div>
+
     <main class="site-wrapper">
       <div class="pt-table">
         <div class="pt-tablecell page-about relative">
@@ -66,7 +78,7 @@
               <div
                 class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8"
               >
-                <div class="page-title text-center">
+                <div class="page-title text-center" id="header-about">
                   <h2>
                     About <span class="primary">me</span>
                     <span class="title-bg"></span>
@@ -84,12 +96,12 @@
                 <div class="about-author">
                   <figure class="author-thumb">
                     <img
-                      src="../public/theme/images/headshotandy.jpeg"
+                      src="../docs/theme/images/headshotandy.jpeg"
                       alt="headshot andy"
                     />
                   </figure>
                   <!-- /.author-bio -->
-                  <div class="author-desc">
+                  <div class="author-desc" id="author-desc">
                     <p><b>From:</b> Atlanta, Georgia</p>
                     <p><b>Living in:</b> Paris, France</p>
                     <p>
@@ -103,7 +115,7 @@
                   <!-- /.author-desc -->
                 </div>
                 <!-- /.about-author -->
-                <p>
+                <p id="caption2">
                   A decidedly atypical profile indeed, but I am insatiably
                   curious, meticulous, and passionate about clean, scalable
                   code. Even better, I come equipped with soft skills and an
@@ -114,7 +126,7 @@
 
               <div class="col-xs-12 col-md-6">
                 <div class="section-title clear">
-                  <h3>Skills</h3>
+                  <h3 id="skills">Skills</h3>
                 </div>
                 <div class="skill-wrapper">
                   <div class="progress clear">
@@ -131,14 +143,6 @@
                       <div class="bar"></div>
                     </div>
                     <div class="skill-lavel" data-skill-value="80%"></div>
-                  </div>
-                  <!-- /.progress -->
-                  <div class="progress clear">
-                    <div class="skill-name">Laravel</div>
-                    <div class="skill-bar">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="skill-lavel" data-skill-value="50%"></div>
                   </div>
                   <!-- /.progress -->
                   <div class="progress clear">
@@ -166,11 +170,11 @@
                   </div>
                   <!-- /.progress -->
                   <div class="progress clear">
-                    <div class="skill-name">React JS</div>
+                    <div class="skill-name">Javascript</div>
                     <div class="skill-bar">
                       <div class="bar"></div>
                     </div>
-                    <div class="skill-lavel" data-skill-value="25%"></div>
+                    <div class="skill-lavel" data-skill-value="30%"></div>
                   </div>
                   <!-- /.progress -->
                 </div>
@@ -186,10 +190,12 @@
             <div class="container">
               <div class="flex flex-middle space-between">
                 <span class="prev-page"
-                  ><a href="index.html" class="link">&larr; Home</a></span
+                  ><a href="index.html" class="link" id="nav-home"
+                    >&larr; Home</a
+                  ></span
                 >
                 <span class="next-page"
-                  ><a href="projects.html" class="link"
+                  ><a href="projects.html" class="link" id="nav-projects-next"
                     >Projects &rarr;</a
                   ></span
                 >
@@ -208,12 +214,14 @@
     <!--
 Essential Scripts
 =====================================                                                        -->
-    <script src="../public/theme/plugins/jquery-2.2.4.min.js"></script>
-    <script src="../public/theme/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="../public/theme/plugins/jquery.nicescroll.min.js"></script>
-    <script src="../public/theme/plugins/isotope/isotope.pkgd.min.js"></script>
-    <script src="../public/theme/plugins/slick/slick.min.js"></script>
-    <script src="../public/theme/js/script.js"></script>
+    <script src="../docs/theme/plugins/jquery-2.2.4.min.js"></script>
+    <script src="../docs/theme/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="../docs/theme/plugins/jquery.nicescroll.min.js"></script>
+    <script src="../docs/theme/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="../docs/theme/plugins/slick/slick.min.js"></script>
+    <script src="../docs/theme/js/script.js"></script>
+    <script src="../docs/js/app_local_storage.js"></script>
+    <script src="../docs/js/lang_switcher.js"></script>
     <script
       src="https://kit.fontawesome.com/e57da12aa9.js"
       crossorigin="anonymous"
