@@ -174,12 +174,12 @@ const lang_switcher = {
     if (event.currentTarget.id == "en") {
       lang_switcher.change(lang_switcher.english, lang_switcher.french);
       lang_switcher.previewWrapper.classList.toggle("extend");
-      lang_switcher.data.language = "english";
+      lang_switcher.data.language = "en";
       appLocalStorage.saveToJson("lang_switcher", lang_switcher.data);
-    } else {
+    } else if (event.currentTarget.id == "fr") {
       lang_switcher.change(lang_switcher.french, lang_switcher.english);
       lang_switcher.previewWrapper.classList.toggle("extend");
-      lang_switcher.data.language = "french";
+      lang_switcher.data.language = "fr";
       appLocalStorage.saveToJson("lang_switcher", lang_switcher.data);
     }
   },
