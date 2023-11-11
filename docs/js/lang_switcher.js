@@ -1,7 +1,7 @@
 const lang_switcher = {
   // for local storage of language setting
   data: {
-    language: "english",
+    language: "en",
   },
 
   init: function () {
@@ -43,6 +43,9 @@ const lang_switcher = {
     // event listeners for 'en' and 'fr' buttons
     lang_switcher.english.addEventListener("click", this.handleClick);
     lang_switcher.french.addEventListener("click", this.handleClick);
+
+    lang_switcher.initLocalData();
+    lang_switcher.initLanguageSwitch();
   },
 
   // change function to replace all html on every document
@@ -127,7 +130,7 @@ const lang_switcher = {
         lang_switcher.header_projects.innerHTML =
           '<h2>My <span class="primary">projects</span><span class="title-bg"></span></h2><p>Check back often... this is a constant work in progress.</p>';
         lang_switcher.git.innerHTML =
-          "<h4>My Github</h4><p>All of my docs Github repositories</p>";
+          "<h4>My Github</h4><p>All of my Github repositories</p>";
         lang_switcher.nav_about.innerHTML = "&larr; About";
       }
       //   cv page
@@ -159,9 +162,9 @@ const lang_switcher = {
       //   homepage
       else {
         lang_switcher.caption_home.innerHTML =
-          "Développeur back-end et ancien chef de cuisine à Paris qui, ces jours-ci, envoie plus de code propre que de turbot.<br />N'hésitez pas à fouiller pour vous faire une idée plus précise.";
-        lang_switcher.btn_about.innerHTML = "Moi";
-        lang_switcher.btn_projects.innerHTML = "Projets";
+          "Back-end developer and former chef in Paris, FR. cookin' up that clean, clean code.<br />Feel free to poke around to get a better idea.";
+        lang_switcher.btn_about.innerHTML = "About";
+        lang_switcher.btn_projects.innerHTML = "Projects";
       }
     }
   },
@@ -169,13 +172,33 @@ const lang_switcher = {
   handleClick: function (event) {
     event.preventDefault();
     if (event.currentTarget.id == "en") {
-      lang_switcher.data.language = "english";
       lang_switcher.change(lang_switcher.english, lang_switcher.french);
       lang_switcher.previewWrapper.classList.toggle("extend");
+      lang_switcher.data.language = "english";
+      appLocalStorage.saveToJson("lang_switcher", lang_switcher.data);
     } else {
-      lang_switcher.data.language = "french";
       lang_switcher.change(lang_switcher.french, lang_switcher.english);
       lang_switcher.previewWrapper.classList.toggle("extend");
+      lang_switcher.data.language = "french";
+      appLocalStorage.saveToJson("lang_switcher", lang_switcher.data);
+    }
+  },
+
+  initLocalData: function () {
+    // init localStorage value
+    // recuperate localStorage
+    const localStorageData = appLocalStorage.getFromJson("lang_switcher");
+    if (localStorageData) {
+      lang_switcher.data = localStorageData;
+    }
+  },
+
+  initLanguageSwitch: function () {
+    const language = lang_switcher.data.language;
+    if (language == "english") {
+      lang_switcher.change(lang_switcher.english, lang_switcher.french);
+    } else {
+      lang_switcher.change(lang_switcher.french, lang_switcher.english);
     }
   },
 };
