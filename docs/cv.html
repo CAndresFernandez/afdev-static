@@ -52,7 +52,7 @@
   <!-- set class="dark" on body tag for DARK-THEME -->
   <body class="dark">
     <!-- language switcher -->
-    <div class="preview-wrapper">
+    <div class="preview-wrapper" id="preview-wrapper">
       <div class="switcher-head">
         <ul class="lang-options list-none">
           <li class="text-center" title="english">
@@ -195,12 +195,12 @@
                       </div>
                     </div>
                     <!-- /.history-item -->
-                    <div class="history-item" id="spr">
+                    <div class="history-item">
                       <div class="history-icon">
                         <span class="history-hex"></span>
                         <i class="fa-solid fa-kitchen-set"></i>
                       </div>
-                      <div class="history-text">
+                      <div class="history-text" id="spr">
                         <h5>Spring Restaurant</h5>
                         <span>2013 - 2015</span>
                         <p>
@@ -224,13 +224,13 @@
             <div class="container">
               <div class="flex flex-middle space-between">
                 <span class="prev-page"
-                  ><a href="projects.html" class="link" id="nav-projects"
+                  ><a href="projects.html" class="link" id="nav-projects-prev"
                     >&larr; Projects</a
                   ></span
                 >
                 <span class="next-page"
                   ><a href="contact.html" class="link" id="nav-contact"
-                    >Contact Me &rarr;</a
+                    >Contact &rarr;</a
                   ></span
                 >
               </div>
@@ -253,6 +253,7 @@ Essential Scripts
     <script src="../docs/theme/plugins/isotope/isotope.pkgd.min.js"></script>
     <script src="../docs/theme/plugins/slick/slick.min.js"></script>
     <script src="../docs/theme/js/script.js"></script>
+    <script src="../docs/js/lang_switcher.js"></script>
     <script
       src="https://kit.fontawesome.com/e57da12aa9.js"
       crossorigin="anonymous"
