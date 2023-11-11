@@ -112,7 +112,7 @@ const lang_switcher = {
         lang_switcher.btn_about.innerHTML = "Moi";
         lang_switcher.btn_projects.innerHTML = "Projets";
       }
-    } else {
+    } else if (lang_on.innerHTML !== "FR") {
       // about page
       if (window.location.href.includes("about.html")) {
         lang_switcher.header_about.innerHTML =
@@ -195,7 +195,7 @@ const lang_switcher = {
 
   initLanguageSwitch: function () {
     const language = lang_switcher.data.language;
-    if (language == "english") {
+    if (language == "en" || language == null) {
       lang_switcher.change(lang_switcher.english, lang_switcher.french);
     } else {
       lang_switcher.change(lang_switcher.french, lang_switcher.english);

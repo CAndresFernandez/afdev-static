@@ -14,8 +14,7 @@ body {
     font-size: 16px;
     line-height: 30px;
     color: #ababab;
-    height: 100%;
-    overflow: hidden;
+
 }
 
 a {
@@ -1332,6 +1331,11 @@ label {
 	For Small Desktop / tablet landscape
 ==============================================================*/
 @media (min-width: 980px) and (max-width: 1150px) {
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
+
     .author-image-large img {
         height: calc(80vh - 4px);
     }
