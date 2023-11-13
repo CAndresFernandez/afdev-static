@@ -103,7 +103,7 @@ const lang_switcher = {
       else if (window.location.href.includes("contact")) {
         lang_switcher.header_contact.innerHTML =
           '<h2>Contactez-<span class="primary">moi</span><span class="title-bg"></span></h2><p>N\'hésitez pas à me contacter si vous avez des questions, ou simplement envie de discuter.</p>';
-        lang_switcher.linkedin.innerHTML = "cliquez pour voir mon profil";
+        lang_switcher.linkedin.innerHTML = "Cliquez pour voir mon profil";
       }
       //   homepage
       else {

@@ -19,13 +19,13 @@ body {
 }
 
 a {
-    color: inherit;
+    color: #f9423a;
     transition: all 0.3s ease 0s;
 }
 
 a:hover,
 a:focus {
-    color: #f9423a;
+    color: #ffffff;
     text-decoration: none;
     outline: 0 none;
 }
@@ -289,7 +289,6 @@ label {
 
 .page-title a {
     font-size: 14px;
-    font-style: italic;
     text-decoration: underline;
 }
 
@@ -1437,7 +1436,6 @@ label {
     .page-title a {
         color: #f9423a;
         font-size: 24px;
-        font-style: italic;
         text-decoration: underline;
     }
 
@@ -1605,7 +1603,6 @@ label {
     .page-title a {
         color: #f9423a;
         font-size: 24px;
-        font-style: italic;
         text-decoration: underline;
     }
 
