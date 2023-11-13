@@ -49,7 +49,7 @@ const lang_switcher = {
   },
 
   // change function to replace all html on every document
-  change: function (lang_on, lang_off) {
+  switch: function (lang_on, lang_off) {
     if (!lang_on.classList.contains("current_lang")) {
       // if the span that the user clicks on does not have the "current_lang" class
       lang_on.classList.add("current_lang");
@@ -162,7 +162,7 @@ const lang_switcher = {
       //   homepage
       else {
         lang_switcher.caption_home.innerHTML =
-          "Back-end developer and former chef in Paris, FR. <br /> Serving up more fresh code than fine foods these days.<br />Feel free to poke around to get a better idea.";
+          "Back-end developer and former chef in Paris, FR. <br />Serving up more fresh code than fine foods these days.<br />Feel free to poke around to get a better idea.";
         lang_switcher.btn_about.innerHTML = "About";
         lang_switcher.btn_projects.innerHTML = "Projects";
       }
@@ -172,12 +172,12 @@ const lang_switcher = {
   handleClick: function (event) {
     event.preventDefault();
     if (event.currentTarget.id == "en") {
-      lang_switcher.change(lang_switcher.english, lang_switcher.french);
+      lang_switcher.switch(lang_switcher.english, lang_switcher.french);
       lang_switcher.previewWrapper.classList.toggle("extend");
       lang_switcher.data.language = "en";
       appLocalStorage.saveToJson("lang_switcher", lang_switcher.data);
     } else if (event.currentTarget.id == "fr") {
-      lang_switcher.change(lang_switcher.french, lang_switcher.english);
+      lang_switcher.switch(lang_switcher.french, lang_switcher.english);
       lang_switcher.previewWrapper.classList.toggle("extend");
       lang_switcher.data.language = "fr";
       appLocalStorage.saveToJson("lang_switcher", lang_switcher.data);
@@ -196,9 +196,9 @@ const lang_switcher = {
   initLanguageSwitch: function () {
     const language = lang_switcher.data.language;
     if (language == "en" || language == null) {
-      lang_switcher.change(lang_switcher.english, lang_switcher.french);
+      lang_switcher.switch(lang_switcher.english, lang_switcher.french);
     } else {
-      lang_switcher.change(lang_switcher.french, lang_switcher.english);
+      lang_switcher.switch(lang_switcher.french, lang_switcher.english);
     }
   },
 };
