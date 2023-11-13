@@ -82,7 +82,7 @@ const lang_switcher = {
       //   cv page
       else if (window.location.href.includes("cv")) {
         lang_switcher.header_cv.innerHTML =
-          '<h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, réflexion critique et adaptabilité. Apprenti insatiable et geek de longue date en quête éternelle de maîtriser son métier, quel que soit le défi.</p><a href="./downloads/AndresFernandez_CV_B_FR.pdf" class="cv-download" download="AndresFernandezCV_FR">Télécharger mon CV</a>';
+          '<h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, réflexion critique et adaptabilité. Apprenti insatiable et geek de longue date en quête éternelle de maîtriser son métier, quel que soit le défi.</p><a href="./downloads/AndresFernandez_CV_B_FR.pdf" target="_blank" class="cv-download">Télécharger mon CV</a>';
         lang_switcher.edu.innerHTML = "Éducation";
         lang_switcher.exp.innerHTML = "Expérience";
         lang_switcher.oclock.innerHTML =
