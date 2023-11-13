@@ -1048,12 +1048,11 @@ label {
 
 .contact-wrapper {
     margin: auto;
-    width: 100%;
+    width: 33%;
 }
 
 .contact-block {
     margin-bottom: 30px;
-    padding-left: 33%;
 }
 
 .contact-block:last-child {
@@ -1250,7 +1249,7 @@ label {
     height: 48px;
     right: 0px;
     position: fixed;
-    top: 100px;
+    top: 96px;
     width: 72px;
     z-index: 1200;
     transition: all 0.4s ease-in-out 0s;
@@ -1484,11 +1483,10 @@ label {
     }
 
     .about-author .author-thumb {
-        border: 5px solid #1e2530;
+        border: 0 none;
         margin-bottom: 15px;
         margin-right: 0;
-        padding: 5px;
-        width: 165px;
+        padding: 0;
     }
 
     .about-author .author-desc b {
@@ -1556,18 +1554,6 @@ label {
         display: block;
         margin: 20px 0;
     }
-
-    .contact-block {
-        padding-left: unset;
-    }
-
-    .contact-block .media-body {
-        padding-left: 15px;
-    }
-
-    .preview-wrapper {
-        top: 91%;
-    }
 }
 
 .dark {
@@ -1616,9 +1602,5 @@ label {
 .dark .btn-border {
     border-color: #1e2530;
 }
-
-
-
-
 
 /*# sourceMappingURL=style.css.map */
