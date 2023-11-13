@@ -25,7 +25,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #ababab;
+    color: #f9423a;
     text-decoration: none;
     outline: 0 none;
 }
@@ -54,7 +54,7 @@ p:last-child {
  * Selection color
  */
 ::-moz-selection {
-    background-color: #f13131;
+    background-color: #f9423a;
     color: #fff;
 }
 
@@ -273,11 +273,7 @@ label {
 }
 
 .page-title {
-    margin-bottom: 75px;
-}
-
-.page-title img {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .page-title h2 {
@@ -291,6 +287,12 @@ label {
 
 .page-title p {
     font-size: 16px;
+}
+
+.page-title a {
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .page-title .title-bg {
@@ -1567,6 +1569,21 @@ label {
 
     .preview-wrapper {
         top: 91%;
+    }
+
+    .history-block-wrapper {
+        display: none;
+    }
+
+    .page-title a {
+        color: #f9423a;
+        font-size: 24px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    .page-title a:focus {
+        color: #ffffff;
     }
 }
 
