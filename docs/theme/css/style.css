@@ -1048,11 +1048,12 @@ label {
 
 .contact-wrapper {
     margin: auto;
-    width: 33%;
+    width: 100%;
 }
 
 .contact-block {
     margin-bottom: 30px;
+    padding-left: 33%;
 }
 
 .contact-block:last-child {
@@ -1483,10 +1484,11 @@ label {
     }
 
     .about-author .author-thumb {
-        border: 0 none;
+        border: 5px solid #1e2530;
         margin-bottom: 15px;
         margin-right: 0;
-        padding: 0;
+        padding: 5px;
+        width: 165px;
     }
 
     .about-author .author-desc b {
@@ -1554,6 +1556,18 @@ label {
         display: block;
         margin: 20px 0;
     }
+
+    .contact-block {
+        padding-left: unset;
+    }
+
+    .contact-block .media-body {
+        padding-left: 15px;
+    }
+
+    .preview-wrapper {
+        top: 91%;
+    }
 }
 
 .dark {
@@ -1602,5 +1616,9 @@ label {
 .dark .btn-border {
     border-color: #1e2530;
 }
+
+
+
+
 
 /*# sourceMappingURL=style.css.map */
