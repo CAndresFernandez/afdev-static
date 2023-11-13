@@ -112,74 +112,24 @@ const lang_switcher = {
         lang_switcher.btn_about.innerHTML = "Moi";
         lang_switcher.btn_projects.innerHTML = "Projets";
       }
-    } else if (lang_on.innerHTML !== "FR") {
-      // about page
-      if (window.location.href.includes("about")) {
-        lang_switcher.header_about.innerHTML =
-          '<h2>About <span class="primary">Me</span><span class="title-bg"></span></h2><p>After a fruitful 18-year career as a professional chef, I made the big switch to programming. Now I\'m on the hunt for quality experience in back-end development wherever I can get it.</p>';
-        lang_switcher.author_desc.innerHTML =
-          "<p><b>From:</b> Atlanta, Georgia</p><p><b>Living in:</b> Paris, France</p><p><b>Speaks:</b> English, Français, Español, Deutsch, 한국어</p><p><b>Interests:</b> Arsenal FC, Gaming, Tennis, Hiking, Amari, Guitar</p>";
-        lang_switcher.caption2.innerHTML =
-          "A decidedly atypical profile indeed, but I am insatiably curious, meticulous, and passionate about clean, scalable code. Even better, I come equipped with soft skills and an attention to detail that only experience can provide.";
-        lang_switcher.skills.innerHTML = "Skills";
-        lang_switcher.nav_home.innerHTML = "&larr; Home";
-        lang_switcher.nav_projects_next.innerHTML = "Projects &rarr;";
-      }
-      //   projects page
-      else if (window.location.href.includes("projects")) {
-        lang_switcher.header_projects.innerHTML =
-          '<h2>My <span class="primary">projects</span><span class="title-bg"></span></h2><p>Check back often... this is a constant work in progress.</p>';
-        lang_switcher.git.innerHTML =
-          "<h4>My Github</h4><p>All of my Github repositories</p>";
-        lang_switcher.nav_about.innerHTML = "&larr; About";
-      }
-      //   cv page
-      else if (window.location.href.includes("cv")) {
-        lang_switcher.header_cv.innerHTML =
-          '<h2 id="title-cv">My <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Determined, rigorous, and passionate professional who began programming in 2023. Vastly experienced in autonomous and collaborative execution of complex tasks requiring an elevated degree of analysis, critical thinking, and adaptability. Insatiable apprentice on an eternal quest to master his craft, no matter the challenge.</p><a href="./downloads/AndresFernandez_CV_B.pdf" class="cv-download" download="AndresFernandezCV">Download my CV</a>';
-        lang_switcher.edu.innerHTML = "Education";
-        lang_switcher.exp.innerHTML = "Experience";
-        lang_switcher.oclock.innerHTML =
-          "<h5>École O'clock</h5><span>May - October 2023</span><p>Fullstack web development <br />Specialisation PHP/Symfony";
-        lang_switcher.gsu.innerHTML =
-          "<h5>Georgia State University</h5><span>2006 - 2007</span><p><em>Major</em>: History <br /><em>Minor</em>: German Language</p>";
-        lang_switcher.aia.innerHTML =
-          "<h5>Art Institute of Atlanta</h5><span>2004 - 2006</span><p><p>Culinary Arts &amp; Hospitality Management</p></p>";
-        lang_switcher.lcm.innerHTML =
-          "<h5>Les Cuistots Migrateurs</h5><span>2017 - 2022</span><p><b>Managing Partner &amp; Culinary Director</b><br />Drove planning, sourcing, production, training, staffing, R&amp;D, and cost control through a period of exponential growth. <br />Developed culinary  program for the culinary school founded by the company's non-profit branch in 2021.</p>";
-        lang_switcher.lblv.innerHTML =
-          "<h5>La Bourse et La Vie</h5><span>2015 - 2017</span><p><b>Chef de cuisine</b> <br />Managed opening and continued operation of the restaurant, including menu development, planning, product sourcing, hiring, training, execution, and cost management. <br />Nurtured the spirit of excellence, simplicity, and precision the company is known for.</p>";
-        lang_switcher.spr.innerHTML =
-          "<h5>Spring</h5><span>2013 - 2015</span><p><b>Sous-Chef de cuisine</b> <br />Key member of high-performance team providing Michelin-level food and service.</p>";
-        lang_switcher.nav_projects_prev.innerHTML = "&larr; Projects";
-      }
-      //   contact page
-      else if (window.location.href.includes("contact")) {
-        lang_switcher.header_contact.innerHTML =
-          '<h2>Get in <span class="primary">touch</span><span class="title-bg"></span></h2><p>Send me a message if you have any questions, or just want to chat.</p>';
-        lang_switcher.linkedin.innerHTML = "click to see my profile";
-      }
-      //   homepage
-      else {
-        lang_switcher.caption_home.innerHTML =
-          "Back-end developer and former chef in Paris, FR. <br />Serving up more fresh code than fine foods these days.<br />Feel free to poke around to get a better idea.";
-        lang_switcher.btn_about.innerHTML = "About";
-        lang_switcher.btn_projects.innerHTML = "Projects";
-      }
     }
   },
 
   handleClick: function (event) {
     event.preventDefault();
     if (event.currentTarget.id == "en") {
-      lang_switcher.switch(lang_switcher.english, lang_switcher.french);
-      lang_switcher.previewWrapper.classList.toggle("extend");
-      lang_switcher.data.language = "en";
-      appLocalStorage.saveToJson("lang_switcher", lang_switcher.data);
+      // clear local storage to remove 'fr'
+      localStorage.clear();
+      //   reload page to reload the static english version
+      location.reload();
     } else if (event.currentTarget.id == "fr") {
+      // switch from english to french
       lang_switcher.switch(lang_switcher.french, lang_switcher.english);
+      //   close the tab
       lang_switcher.previewWrapper.classList.toggle("extend");
+      //   set the language in local storage as 'fr'
       lang_switcher.data.language = "fr";
+      //   save to json
       appLocalStorage.saveToJson("lang_switcher", lang_switcher.data);
     }
   },
@@ -195,9 +145,8 @@ const lang_switcher = {
 
   initLanguageSwitch: function () {
     const language = lang_switcher.data.language;
-    if (language == "en" || language == null) {
-      lang_switcher.switch(lang_switcher.english, lang_switcher.french);
-    } else {
+    if (language == "fr") {
+      // switch if 'fr' is found, otherwise will load default
       lang_switcher.switch(lang_switcher.french, lang_switcher.english);
     }
   },
