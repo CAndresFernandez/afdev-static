@@ -112,6 +112,9 @@ const lang_switcher = {
         lang_switcher.btn_about.innerHTML = "Moi";
         lang_switcher.btn_projects.innerHTML = "Projets";
       }
+
+      lang_switcher.english.classList.remove("active");
+      lang_switcher.french.classList.add("active");
     }
   },
 
@@ -127,8 +130,7 @@ const lang_switcher = {
       lang_switcher.switch(lang_switcher.french, lang_switcher.english);
       //   close the tab
       lang_switcher.previewWrapper.classList.toggle("extend");
-      lang_switcher.english.classList.remove("active");
-      lang_switcher.french.classList.add("active");
+
       //   set the language in local storage as 'fr'
       lang_switcher.data.language = "fr";
       //   save to json
