@@ -162,7 +162,7 @@ const lang_switcher = {
       //   homepage
       else {
         lang_switcher.caption_home.innerHTML =
-          "Back-end developer and former chef in Paris, FR. serving up more fresh code than dishes these days.<br />Feel free to poke around to get a better idea.";
+          "Back-end developer and former chef in Paris, FR. serving up more fresh code than fine foods these days.<br />Feel free to poke around to get a better idea.";
         lang_switcher.btn_about.innerHTML = "About";
         lang_switcher.btn_projects.innerHTML = "Projects";
       }
