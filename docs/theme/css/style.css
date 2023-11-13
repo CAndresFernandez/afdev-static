@@ -735,7 +735,7 @@ label {
     font-family: "Open Sans", sans-serif;
     padding-left: 32px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 98%;
 }
 
 .history-item>* {
@@ -1599,6 +1599,8 @@ label {
     .history-block-wrapper {
         display: none;
     }
+
+
 
     .page-title a {
         color: #f9423a;

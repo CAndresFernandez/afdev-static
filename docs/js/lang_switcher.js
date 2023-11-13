@@ -94,7 +94,7 @@ const lang_switcher = {
         lang_switcher.lcm.innerHTML =
           "<h5>Les Cuistots Migrateurs</h5><span>2017 - 2022</span><p><b>Associé Gérant &amp; Directeur Culinaire</b><br />Responsable de la planification, l'approvisionnement, la production, l'embauche et la formation du personnel, la R&amp;D et la gestion des coûts au cours d'une période de croissance exponentielle.<br />Développement du programme culinaire pour l'École des Cuistots Migrateurs, une école de cuisine à but non lucratif fondée par l'entreprise en 2021.</p>";
         lang_switcher.lblv.innerHTML =
-          "<h5>La Bourse et La Vie</h5><span>2015 - 2017</span><p><b>Chef de cuisine</b><br />Gestion et direction de l'ouverture d'un nouveau restaurant, y compris le développement de menus, la planification, l'approvisionnement, l'embauche et la formation du personnel, l'exécution des services et la gestion des coûts.<br />Cultivation de l'esprit d'excellence, de simplicité et de précision pour lesquels l'entreprise est reconnue.</p>";
+          "<h5>La Bourse et La Vie</h5><span>2015 - 2017</span><p><b>Chef de cuisine</b><br />Gestion et direction de l'ouverture et l'opération restaurant, y compris le développement de menus, la planification, l'approvisionnement, l'embauche et la formation du personnel, l'exécution des services et la gestion des coûts.<br />Cultivation de l'esprit d'excellence, de simplicité et de précision pour lesquels l'entreprise est reconnue.</p>";
         lang_switcher.spr.innerHTML =
           "<h5>Spring</h5><span>2013 - 2015</span><p><b>Sous-Chef de cuisine</b> <br />Membre clé d'une équipe haute performance offrant une cuisine et un service de niveau Michelin.</p>";
         lang_switcher.nav_projects_prev.innerHTML = "&larr; Projets";
@@ -116,7 +116,7 @@ const lang_switcher = {
       // about page
       if (window.location.href.includes("about")) {
         lang_switcher.header_about.innerHTML =
-          '<h2>About <span class="primary">Me</span><span class="title-bg"></span></h2><p>After a fruitful 18-year career as a professional chef, Imade the big switch to programming. Now I\'m on the hunt for quality experience in back-end development wherever I can get it.</p>';
+          '<h2>About <span class="primary">Me</span><span class="title-bg"></span></h2><p>After a fruitful 18-year career as a professional chef, I made the big switch to programming. Now I\'m on the hunt for quality experience in back-end development wherever I can get it.</p>';
         lang_switcher.author_desc.innerHTML =
           "<p><b>From:</b> Atlanta, Georgia</p><p><b>Living in:</b> Paris, France</p><p><b>Speaks:</b> English, Français, Español, Deutsch, 한국어</p><p><b>Interests:</b> Arsenal FC, Gaming, Tennis, Hiking, Amari, Guitar</p>";
         lang_switcher.caption2.innerHTML =
@@ -148,7 +148,7 @@ const lang_switcher = {
         lang_switcher.lcm.innerHTML =
           "<h5>Les Cuistots Migrateurs</h5><span>2017 - 2022</span><p><b>Managing Partner &amp; Culinary Director</b><br />Drove planning, sourcing, production, training, staffing, R&amp;D, and cost control through a period of exponential growth. <br />Developed culinary  program for the culinary school founded by the company's non-profit branch in 2021.</p>";
         lang_switcher.lblv.innerHTML =
-          "<h5>La Bourse et La Vie</h5><span>2015 - 2017</span><p><b>Chef de cuisine</b> <br />Managed opening of the restaurant in 2015, including menu development, planning, product sourcing, hiring, training, execution, and cost management. <br />Nurtured the spirit of excellence, simplicity, and precision the company is known for.</p>";
+          "<h5>La Bourse et La Vie</h5><span>2015 - 2017</span><p><b>Chef de cuisine</b> <br />Managed opening and continued operation of the restaurant, including menu development, planning, product sourcing, hiring, training, execution, and cost management. <br />Nurtured the spirit of excellence, simplicity, and precision the company is known for.</p>";
         lang_switcher.spr.innerHTML =
           "<h5>Spring</h5><span>2013 - 2015</span><p><b>Sous-Chef de cuisine</b> <br />Key member of high-performance team providing Michelin-level food and service.</p>";
         lang_switcher.nav_projects_prev.innerHTML = "&larr; Projects";
