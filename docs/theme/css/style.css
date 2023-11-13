@@ -1423,6 +1423,21 @@ label {
         display: block;
         margin: 20px 0;
     }
+
+    .history-block-wrapper {
+        display: none;
+    }
+
+    .page-title a {
+        color: #f9423a;
+        font-size: 24px;
+        font-style: italic;
+        text-decoration: underline;
+    }
+
+    .page-title a:focus {
+        color: #ffffff;
+    }
 }
 
 /*============================================================
