@@ -1600,10 +1600,6 @@ label {
         display: none;
     }
 
-    .page-title.cv {
-        margin-bottom: 0;
-    }
-
     .page-title a {
         color: #f9423a;
         font-size: 24px;
