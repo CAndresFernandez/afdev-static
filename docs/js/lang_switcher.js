@@ -108,7 +108,7 @@ const lang_switcher = {
       //   homepage
       else {
         lang_switcher.caption_home.innerHTML =
-          "Développeur back-end et ancien chef de cuisine à Paris qui, ces jours-ci, envoie beaucoup plus de code propre que de turbot.<br />N'hésitez pas à fouiller pour vous faire une idée plus précise.";
+          "Développeur back-end et ancien chef de cuisine à Paris qui, ces jours-ci, envoie beaucoup plus de fraîcheur en code que dans l'assiette.<br />N'hésitez pas à fouiller pour vous faire une idée plus précise.";
         lang_switcher.btn_about.innerHTML = "Moi";
         lang_switcher.btn_projects.innerHTML = "Projets";
       }
@@ -156,13 +156,13 @@ const lang_switcher = {
       //   contact page
       else if (window.location.href.includes("contact")) {
         lang_switcher.header_contact.innerHTML =
-          '<h2>Get in <span class="primary">touch</span><span class="title-bg"></span></h2><p>Send me an message if you have any questions, or just want to chat.</p>';
+          '<h2>Get in <span class="primary">touch</span><span class="title-bg"></span></h2><p>Send me a message if you have any questions, or just want to chat.</p>';
         lang_switcher.linkedin.innerHTML = "click to see my profile";
       }
       //   homepage
       else {
         lang_switcher.caption_home.innerHTML =
-          "Back-end developer and former chef in Paris, FR. cookin' up that clean, clean code.<br />Feel free to poke around to get a better idea.";
+          "Back-end developer and former chef in Paris, FR. serving up more fresh code than dishes these days.<br />Feel free to poke around to get a better idea.";
         lang_switcher.btn_about.innerHTML = "About";
         lang_switcher.btn_projects.innerHTML = "Projects";
       }
