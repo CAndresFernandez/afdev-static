@@ -28,6 +28,7 @@ const lang_switcher = {
     lang_switcher.git = document.getElementById("git");
     //   cv page
     lang_switcher.header_cv = document.getElementById("header-cv");
+    lang_switcher.scroller = document.querySelectorAll("div.history-scroller");
     lang_switcher.edu = document.getElementById("edu");
     lang_switcher.exp = document.getElementById("exp");
     lang_switcher.oclock = document.getElementById("oclock");
@@ -62,11 +63,11 @@ const lang_switcher = {
       // about page
       if (window.location.href.includes("about")) {
         lang_switcher.header_about.innerHTML =
-          '<h2>Qui suis-<span class="primary">je?</span><span class="title-bg"></span></h2><p>Après une carrière de 18 ans en tant que chef de cuisine, j\'ai fait un gros virage vers la programmation. Je suis désormais à la recherche de belles aventures dans la tech.</p>';
+          '<h2>Qui suis-<span class="primary">je?</span><span class="title-bg"></span></h2><p>Après une carrière de 18 ans en tant que chef de cuisine, j\'ai rendu mon tablier et pris un gros virage vers la programmation. J’ouvre désormais la page d’une belle aventure tech.</p>';
         lang_switcher.author_desc.innerHTML =
-          "<p><b>De:</b> Atlanta, Georgia</p><p><b>Habite:</b> Paris, France</p><p><b>Parle:</b> Français, English, Español, Deutsch, 한국어</p><p><b>Intérêts:</b> Arsenal FC, Jeux-vidéos, Tennis, Randonnée, Amari, Guitarre</p>";
+          "<p><b>De:</b> Atlanta, Géorgie</p><p><b>Habite:</b> Paris, France</p><p><b>Parle:</b> Français, English, Español, Deutsch, 한국어</p><p><b>Intérêts:</b> Arsenal FC, Jeux-vidéos, Tennis, Randonnée, Amari, Guitare</p>";
         lang_switcher.caption2.innerHTML =
-          "Un profil décidément atypique, mais je suis insatiablement curieux, méticuleux et passionné par du code propre et scalable. Mieux encore, j'arrive équipé d'un bon nombre de 'soft skills' et d'un souci du détail que seule l'expérience peut fournir.";
+          "Un profil atypique, certes, mais je suis insatiablement curieux, méticuleux et passionné, avec un engouement fort pour un code propre et scalable.<br />Mieux encore, j'arrive équipé d'un bon nombre de soft skills et d'un souci du détail que seule l'expérience saurait fournir. Rigueur, implication et endurance restent des valeurs fortement ancrées dans ma seconde vie.";
         lang_switcher.skills.innerHTML = "Compétences techniques";
         lang_switcher.nav_home.innerHTML = "&larr; Accueil";
         lang_switcher.nav_projects_next.innerHTML = "Projets &rarr;";
@@ -81,8 +82,11 @@ const lang_switcher = {
       }
       //   cv page
       else if (window.location.href.includes("cv")) {
+        lang_switcher.scroller.forEach((scroller) => {
+          scroller.classList.add("fr-reduce");
+        });
         lang_switcher.header_cv.innerHTML =
-          '<h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, réflexion critique et adaptabilité. Apprenti insatiable et geek de longue date en quête éternelle de maîtriser son métier, quel que soit le défi.</p><a href="./downloads/AndresFernandez_CV_B_FR.pdf" target="_blank" class="cv-download">Télécharger mon CV</a>';
+          '<div class="col-xs-12 col-md-10 col-lg-12"><div class="page-title cv text-center"><h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Je dispose d’une vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, de réflexion critique et d’adaptabilité. Apprenti insatiable et geek de longue date, je suis porté par une quête éternelle de la maîtrise du métier, quel que soit le défi.</p><a href="./downloads/AndresFernandez_CV_B_FR.pdf" target="_blank" class="cv-download">Télécharger mon CV</a>';
         lang_switcher.edu.innerHTML = "Éducation";
         lang_switcher.exp.innerHTML = "Expérience";
         lang_switcher.oclock.innerHTML =
@@ -102,13 +106,13 @@ const lang_switcher = {
       //   contact page
       else if (window.location.href.includes("contact")) {
         lang_switcher.header_contact.innerHTML =
-          '<h2>Contactez-<span class="primary">moi</span><span class="title-bg"></span></h2><p>N\'hésitez pas à me contacter si vous avez des questions, ou simplement envie de discuter.</p>';
+          '<h2>Contactez-<span class="primary">moi</span><span class="title-bg"></span></h2><p>N\'hésitez pas à me contacter pour toute question, ou simplement pour échanger sur vos projets.</p>';
         lang_switcher.linkedin.innerHTML = "Cliquez pour voir mon profil";
       }
       //   homepage
       else {
         lang_switcher.caption_home.innerHTML =
-          "Développeur back-end et ancien chef de cuisine à Paris qui, ces jours-ci, envoie beaucoup plus de fraîcheur en code que dans l'assiette.<br />N'hésitez pas à fouiller pour vous faire une idée plus précise.";
+          "Développeur, ancien chef à Paris, j'envoie ces jours-ci beaucoup plus de fraîcheur en code que dans l'assiette.<br />N'hésitez pas à explorer et découvrir pour en savoir plus sur ce que je fais.";
         lang_switcher.btn_about.innerHTML = "Moi";
         lang_switcher.btn_projects.innerHTML = "Projets";
       }

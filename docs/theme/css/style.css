@@ -713,7 +713,7 @@ label {
     border-bottom: 1px solid #293342;
     left: 0;
     margin-bottom: 0;
-    padding: 15px 34px 14px;
+    padding: 8px 34px 7px;
     position: absolute;
     right: 0;
     top: 0;
@@ -727,6 +727,10 @@ label {
 .history-scroller {
     padding-top: 82px;
     max-height: 377px;
+}
+
+.history-scroller.fr-reduce {
+    max-height: 350px;
 }
 
 .history-item {
