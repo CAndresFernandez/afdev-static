@@ -86,7 +86,7 @@ const lang_switcher = {
           scroller.classList.add("fr-reduce");
         });
         lang_switcher.header_cv.innerHTML =
-          '<div class="col-xs-12 col-md-10 col-lg-12"><div class="page-title cv text-center"><h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Je dispose d’une vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, de réflexion critique et d’adaptabilité. Apprenti insatiable et geek de longue date, je suis porté par une quête éternelle de la maîtrise du métier, quel que soit le défi.</p><a href="./downloads/AndresFernandez_CV_B_FR.pdf" target="_blank" class="cv-download">Télécharger mon CV</a>';
+          '<div class="col-xs-12 col-md-10 col-lg-12"><div class="page-title cv text-center"><h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Je dispose d’une vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, de réflexion critique et d’adaptabilité. Apprenti insatiable et geek de longue date, je suis porté par une quête éternelle de la maîtrise du métier, quel que soit le défi.</p><a href="./downloads/AndresFernandez_CV_FR.pdf" target="_blank" class="cv-download">Télécharger mon CV</a>';
         lang_switcher.edu.innerHTML = "Éducation";
         lang_switcher.exp.innerHTML = "Expérience";
         lang_switcher.oclock.innerHTML =
