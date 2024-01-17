@@ -90,7 +90,7 @@ const lang_switcher = {
         lang_switcher.edu.innerHTML = "Éducation";
         lang_switcher.exp.innerHTML = "Expérience";
         lang_switcher.oclock.innerHTML =
-          "<h5>École O'clock</h5><span>Mai - Octobre 2023</span><p> Développement web Full-stack <br />Spécialisation PHP/Symfony</p>";
+          "<h5>École O'clock</h5><span>2023</span><p> Développement web Full-stack <br />Spécialisation PHP/Symfony <br />Lead développeur back-end lors du projet d’apothéose: un logiciel de gestion de commandes pour la restauration qui consiste d'un API Symfony, back-office Twig, hub Mercure (real-time streaming), BDD MySQL et front-office ReactJS/Typescript/Redux.</p>";
         lang_switcher.gsu.innerHTML =
           "<h5>Georgia State University</h5><span>2006 - 2007</span><p>Histoire, Langue Allemande</p>";
         lang_switcher.aia.innerHTML =
