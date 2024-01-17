@@ -67,7 +67,7 @@ const lang_switcher = {
         lang_switcher.author_desc.innerHTML =
           "<p><b>De:</b> Atlanta, Géorgie</p><p><b>Habite:</b> Paris, France</p><p><b>Parle:</b> Français, English, Español, Deutsch, 한국어</p><p><b>Intérêts:</b> Arsenal FC, Jeux-vidéos, Tennis, Randonnée, Amari, Guitare</p>";
         lang_switcher.caption2.innerHTML =
-          "Un profil atypique, certes, mais je suis insatiablement curieux, méticuleux et passionné, avec un engouement fort pour un code propre et scalable.<br />Mieux encore, j'arrive équipé d'un bon nombre de soft skills et d'un souci du détail que seule l'expérience saurait fournir. Rigueur, implication et endurance restent des valeurs fortement ancrées dans ma seconde vie.";
+          "Un profil atypique, certes, mais je suis insatiablement curieux, méticuleux et passionné, avec un engouement fort pour un code propre et scalable.<br />Grâce à mon expérience, j'arrive équipé d'un bon nombre de 'soft skills' tel que la communication et l'adaptabilité. Rigueur, implication et endurance restent des valeurs fortement ancrées dans ma seconde vie.";
         lang_switcher.skills.innerHTML = "Compétences techniques";
         lang_switcher.nav_home.innerHTML = "&larr; Accueil";
         lang_switcher.nav_projects_next.innerHTML = "Projets &rarr;";
@@ -86,7 +86,7 @@ const lang_switcher = {
           scroller.classList.add("fr-reduce");
         });
         lang_switcher.header_cv.innerHTML =
-          '<div class="col-xs-12 col-md-10 col-lg-12"><div class="page-title cv text-center"><h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Je dispose d’une vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, de réflexion critique et d’adaptabilité. Apprenti insatiable et geek de longue date, je suis porté par une quête éternelle de la maîtrise du métier, quel que soit le défi.</p><a href="./downloads/AndresFernandez_CV_FR.pdf" target="_blank" class="cv-download">Télécharger mon CV</a>';
+          '<div class="col-xs-12 col-md-10 col-lg-12"><div class="page-title cv text-center"><h2 id="title-cv"> Mon <span class="primary">CV</span><span class="title-bg"></span></h2><p id="caption-cv">Professionnel déterminé, méticuleux et passionné. Je dispose d’une vaste expérience dans l\'exécution autonome et collaborative de tâches complexes qui exigent un degré élevé de compétences analytiques, de réflexion critique et d’adaptabilité. Apprenti insatiable et geek de longue date, je suis porté par une quête éternelle de la maîtrise du métier, quel que soit le défi.</p><a href="./downloads/AndresFernandez_CV_FR.docx.pdf" target="_blank" class="cv-download">Télécharger mon CV</a>';
         lang_switcher.edu.innerHTML = "Éducation";
         lang_switcher.exp.innerHTML = "Expérience";
         lang_switcher.oclock.innerHTML =
